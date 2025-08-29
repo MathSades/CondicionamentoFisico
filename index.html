@@ -3,69 +3,494 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Condicionamento Físico</title>
+    <title>FitPro Academy - Centro de Condicionamento Físico</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
     <header>
-        <h1>Guia de Condicionamento Físico</h1>
+        <div class="header-content">
+            <h1>🏋️ FitPro Academy</h1>
+            <p class="tagline">Seu Centro Completo de Condicionamento Físico</p>
+        </div>
         <nav>
+            <a href="#hero">Início</a>
             <a href="#sobre">Sobre</a>
             <a href="#beneficios">Benefícios</a>
             <a href="#exercicios">Exercícios</a>
-            <a href="#imc">Calculadora IMC</a>
+            <a href="#nutricao">Nutrição</a>
+            <a href="#planos">Planos</a>
+            <a href="#calculadoras">Calculadoras</a>
+            <a href="#faq">FAQ</a>
+            <a href="#contato">Contato</a>
         </nav>
     </header>
 
+    <section id="hero" class="hero">
+        <div class="hero-content">
+            <h2>Transforme Seu Corpo, Transforme Sua Vida</h2>
+            <p>Descubra o poder do condicionamento físico científico com nosso guia completo. Métodos comprovados, resultados garantidos.</p>
+            <button class="cta-button" onclick="document.getElementById('sobre').scrollIntoView()">Começar Jornada</button>
+        </div>
+    </section>
+
     <section id="sobre">
-        <h2>O que é Condicionamento Físico?</h2>
-        <p>Condicionamento físico é a capacidade do corpo de realizar atividades físicas com eficiência, envolvendo força, resistência, flexibilidade e saúde geral.</p>
-    </section>
-
-    <section id="beneficios">
-        <h2>Benefícios</h2>
-        <ul>
-            <li>Melhora da resistência física</li>
-            <li>Fortalecimento muscular</li>
-            <li>Controle do peso</li>
-            <li>Redução do estresse</li>
-            <li>Mais energia no dia a dia</li>
-        </ul>
-    </section>
-
-    <section id="exercicios">
-        <h2>Tipos de Exercícios</h2>
-        <div class="cards">
-            <div class="card">
-                <h3>Aeróbicos</h3>
-                <p>Caminhada, corrida, ciclismo, natação...</p>
-            </div>
-            <div class="card">
-                <h3>Anaeróbicos</h3>
-                <p>Musculação, crossfit, exercícios de força...</p>
-            </div>
-            <div class="card">
-                <h3>Alongamento</h3>
-                <p>Yoga, pilates e exercícios de flexibilidade.</p>
+        <h2>🎯 O que é Condicionamento Físico?</h2>
+        <div class="content-grid">
+            <div class="text-content">
+                <p>O condicionamento físico é um estado de saúde e bem-estar que resulta da prática regular de exercícios físicos, nutrição adequada e descanso suficiente. É a capacidade do corpo de realizar atividades diárias com vigor e energia, sem fadiga excessiva.</p>
+                
+                <h3>Componentes Fundamentais:</h3>
+                <div class="cards">
+                    <div class="component-card">
+                        <h4>💪 Força Muscular</h4>
+                        <p>Capacidade dos músculos de gerar força máxima</p>
+                    </div>
+                    <div class="component-card">
+                        <h4>🫁 Resistência Cardiovascular</h4>
+                        <p>Eficiência do sistema cardiorrespiratório</p>
+                    </div>
+                    <div class="component-card">
+                        <h4>🤸 Flexibilidade</h4>
+                        <p>Amplitude de movimento das articulações</p>
+                    </div>
+                    <div class="component-card">
+                        <h4>⚖️ Composição Corporal</h4>
+                        <p>Proporção ideal entre massa magra e gordura</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <section id="imc">
-        <h2>Calculadora de IMC</h2>
-        <label for="peso">Peso (kg):</label>
-        <input type="number" id="peso" placeholder="Ex: 70">
-        <label for="altura">Altura (m):</label>
-        <input type="number" step="0.01" id="altura" placeholder="Ex: 1.75">
-        <button onclick="calcularIMC()">Calcular</button>
-        <p id="resultado"></p>
+    <section id="beneficios">
+        <h2>🌟 Benefícios Científicamente Comprovados</h2>
+        <div class="benefits-grid">
+            <div class="benefit-category">
+                <h3>Benefícios Físicos</h3>
+                <ul>
+                    <li>Aumento da força e resistência muscular</li>
+                    <li>Melhora da capacidade cardiovascular</li>
+                    <li>Fortalecimento do sistema imunológico</li>
+                    <li>Redução da pressão arterial</li>
+                    <li>Controle do peso corporal</li>
+                    <li>Melhora da densidade óssea</li>
+                </ul>
+            </div>
+            <div class="benefit-category">
+                <h3>Benefícios Mentais</h3>
+                <ul>
+                    <li>Redução do estresse e ansiedade</li>
+                    <li>Melhora do humor e autoestima</li>
+                    <li>Aumento da concentração</li>
+                    <li>Melhor qualidade do sono</li>
+                    <li>Prevenção da depressão</li>
+                    <li>Maior disciplina e foco</li>
+                </ul>
+            </div>
+            <div class="benefit-category">
+                <h3>Benefícios Sociais</h3>
+                <ul>
+                    <li>Maior energia para atividades sociais</li>
+                    <li>Melhora da confiança interpessoal</li>
+                    <li>Oportunidades de networking</li>
+                    <li>Exemplo positivo para outros</li>
+                    <li>Longevidade e qualidade de vida</li>
+                    <li>Redução de custos médicos</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="exercicios">
+        <h2>🏃 Tipos de Exercícios e Metodologias</h2>
+        <div class="exercise-categories">
+            <div class="category-tabs">
+                <button class="tab-button active" onclick="showCategory('aerobicos')">Aeróbicos</button>
+                <button class="tab-button" onclick="showCategory('anaerobicos')">Anaeróbicos</button>
+                <button class="tab-button" onclick="showCategory('flexibilidade')">Flexibilidade</button>
+                <button class="tab-button" onclick="showCategory('funcionais')">Funcionais</button>
+            </div>
+            
+            <div id="aerobicos" class="category-content active">
+                <h3>Exercícios Aeróbicos</h3>
+                <div class="cards">
+                    <div class="exercise-card">
+                        <h4>🏃‍♀️ Corrida</h4>
+                        <p><strong>Intensidade:</strong> Moderada a Alta</p>
+                        <p><strong>Duração:</strong> 20-60 minutos</p>
+                        <p><strong>Benefícios:</strong> Queima de gordura, resistência cardiovascular</p>
+                    </div>
+                    <div class="exercise-card">
+                        <h4>🚴 Ciclismo</h4>
+                        <p><strong>Intensidade:</strong> Baixa a Moderada</p>
+                        <p><strong>Duração:</strong> 30-90 minutos</p>
+                        <p><strong>Benefícios:</strong> Baixo impacto, fortalece pernas</p>
+                    </div>
+                    <div class="exercise-card">
+                        <h4>🏊 Natação</h4>
+                        <p><strong>Intensidade:</strong> Moderada</p>
+                        <p><strong>Duração:</strong> 30-60 minutos</p>
+                        <p><strong>Benefícios:</strong> Exercício completo, baixo impacto</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="anaerobicos" class="category-content">
+                <h3>Exercícios Anaeróbicos</h3>
+                <div class="cards">
+                    <div class="exercise-card">
+                        <h4>🏋️ Musculação</h4>
+                        <p><strong>Intensidade:</strong> Alta</p>
+                        <p><strong>Duração:</strong> 45-90 minutos</p>
+                        <p><strong>Benefícios:</strong> Hipertrofia, força, densidade óssea</p>
+                    </div>
+                    <div class="exercise-card">
+                        <h4>🔥 HIIT</h4>
+                        <p><strong>Intensidade:</strong> Muito Alta</p>
+                        <p><strong>Duração:</strong> 15-30 minutos</p>
+                        <p><strong>Benefícios:</strong> Queima máxima de calorias, eficiência</p>
+                    </div>
+                    <div class="exercise-card">
+                        <h4>🤸 CrossFit</h4>
+                        <p><strong>Intensidade:</strong> Alta</p>
+                        <p><strong>Duração:</strong> 60 minutos</p>
+                        <p><strong>Benefícios:</strong> Condicionamento geral, força funcional</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="flexibilidade" class="category-content">
+                <h3>Flexibilidade e Mobilidade</h3>
+                <div class="cards">
+                    <div class="exercise-card">
+                        <h4>🧘 Yoga</h4>
+                        <p><strong>Intensidade:</strong> Baixa a Moderada</p>
+                        <p><strong>Duração:</strong> 45-90 minutos</p>
+                        <p><strong>Benefícios:</strong> Flexibilidade, equilíbrio, relaxamento</p>
+                    </div>
+                    <div class="exercise-card">
+                        <h4>🤸‍♀️ Pilates</h4>
+                        <p><strong>Intensidade:</strong> Moderada</p>
+                        <p><strong>Duração:</strong> 45-60 minutos</p>
+                        <p><strong>Benefícios:</strong> Core, postura, coordenação</p>
+                    </div>
+                    <div class="exercise-card">
+                        <h4>🤲 Alongamento</h4>
+                        <p><strong>Intensidade:</strong> Baixa</p>
+                        <p><strong>Duração:</strong> 15-30 minutos</p>
+                        <p><strong>Benefícios:</strong> Recuperação, flexibilidade</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="funcionais" class="category-content">
+                <h3>Exercícios Funcionais</h3>
+                <div class="cards">
+                    <div class="exercise-card">
+                        <h4>🏃 Movimentos Naturais</h4>
+                        <p><strong>Intensidade:</strong> Moderada</p>
+                        <p><strong>Duração:</strong> 30-45 minutos</p>
+                        <p><strong>Benefícios:</strong> Força aplicável, estabilidade</p>
+                    </div>
+                    <div class="exercise-card">
+                        <h4>⚖️ Equilíbrio</h4>
+                        <p><strong>Intensidade:</strong> Baixa a Moderada</p>
+                        <p><strong>Duração:</strong> 20-30 minutos</p>
+                        <p><strong>Benefícios:</strong> Propriocepção, prevenção lesões</p>
+                    </div>
+                    <div class="exercise-card">
+                        <h4>🎯 Coordenação</h4>
+                        <p><strong>Intensidade:</strong> Moderada</p>
+                        <p><strong>Duração:</strong> 30-45 minutos</p>
+                        <p><strong>Benefícios:</strong> Agilidade, reflexos</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="nutricao">
+        <h2>🥗 Nutrição Esportiva</h2>
+        <div class="nutrition-content">
+            <div class="nutrition-principles">
+                <h3>Princípios Fundamentais</h3>
+                <div class="cards">
+                    <div class="nutrition-card">
+                        <h4>🍖 Proteínas</h4>
+                        <p><strong>Recomendação:</strong> 1.6-2.2g/kg peso</p>
+                        <p>Essencial para recuperação e construção muscular</p>
+                    </div>
+                    <div class="nutrition-card">
+                        <h4>🍞 Carboidratos</h4>
+                        <p><strong>Recomendação:</strong> 5-7g/kg peso</p>
+                        <p>Principal fonte de energia para exercícios</p>
+                    </div>
+                    <div class="nutrition-card">
+                        <h4>🥑 Gorduras</h4>
+                        <p><strong>Recomendação:</strong> 20-35% do VCT</p>
+                        <p>Hormônios, vitaminas e energia de longa duração</p>
+                    </div>
+                    <div class="nutrition-card">
+                        <h4>💧 Hidratação</h4>
+                        <p><strong>Recomendação:</strong> 35ml/kg peso</p>
+                        <p>Fundamental para performance e recuperação</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="planos">
+        <h2>📋 Planos de Treino</h2>
+        <div class="training-plans">
+            <div class="plan-tabs">
+                <button class="plan-tab active" onclick="showPlan('iniciante')">Iniciante</button>
+                <button class="plan-tab" onclick="showPlan('intermediario')">Intermediário</button>
+                <button class="plan-tab" onclick="showPlan('avancado')">Avançado</button>
+            </div>
+            
+            <div id="iniciante" class="plan-content active">
+                <h3>Plano Iniciante (0-6 meses)</h3>
+                <div class="weekly-plan">
+                    <div class="day-plan">
+                        <h4>Segunda - Corpo Todo</h4>
+                        <ul>
+                            <li>Aquecimento: 10min caminhada</li>
+                            <li>Agachamento: 3x15</li>
+                            <li>Flexão (joelhos): 3x10</li>
+                            <li>Prancha: 3x30s</li>
+                            <li>Alongamento: 10min</li>
+                        </ul>
+                    </div>
+                    <div class="day-plan">
+                        <h4>Quarta - Cardio</h4>
+                        <ul>
+                            <li>Aquecimento: 5min</li>
+                            <li>Caminhada rápida: 20min</li>
+                            <li>Exercícios funcionais: 15min</li>
+                            <li>Alongamento: 10min</li>
+                        </ul>
+                    </div>
+                    <div class="day-plan">
+                        <h4>Sexta - Força</h4>
+                        <ul>
+                            <li>Aquecimento: 10min</li>
+                            <li>Circuito de força: 25min</li>
+                            <li>Core: 10min</li>
+                            <li>Relaxamento: 5min</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div id="intermediario" class="plan-content">
+                <h3>Plano Intermediário (6-24 meses)</h3>
+                <div class="weekly-plan">
+                    <div class="day-plan">
+                        <h4>Segunda - Superior</h4>
+                        <ul>
+                            <li>Supino: 4x8-12</li>
+                            <li>Remada: 4x8-12</li>
+                            <li>Desenvolvimento: 3x10-15</li>
+                            <li>Bíceps/Tríceps: 3x12-15</li>
+                        </ul>
+                    </div>
+                    <div class="day-plan">
+                        <h4>Terça - HIIT</h4>
+                        <ul>
+                            <li>Aquecimento: 5min</li>
+                            <li>HIIT: 20min (30s on/30s off)</li>
+                            <li>Core: 15min</li>
+                            <li>Alongamento: 10min</li>
+                        </ul>
+                    </div>
+                    <div class="day-plan">
+                        <h4>Quinta - Inferior</h4>
+                        <ul>
+                            <li>Agachamento: 4x8-12</li>
+                            <li>Stiff: 4x10-12</li>
+                            <li>Avanço: 3x12 cada perna</li>
+                            <li>Panturrilha: 4x15-20</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div id="avancado" class="plan-content">
+                <h3>Plano Avançado (24+ meses)</h3>
+                <div class="weekly-plan">
+                    <div class="day-plan">
+                        <h4>Periodização</h4>
+                        <ul>
+                            <li>6 treinos por semana</li>
+                            <li>Divisão: Push/Pull/Legs x2</li>
+                            <li>Intensidade: 75-90% 1RM</li>
+                            <li>Volume: 16-22 séries/grupo</li>
+                        </ul>
+                    </div>
+                    <div class="day-plan">
+                        <h4>Técnicas Avançadas</h4>
+                        <ul>
+                            <li>Drop sets</li>
+                            <li>Séries gigantes</li>
+                            <li>Rest-pause</li>
+                            <li>Periodização ondulada</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="calculadoras">
+        <h2>🧮 Calculadoras Fitness</h2>
+        <div class="calculators">
+            <div class="calculator-card">
+                <h3>Calculadora de IMC</h3>
+                <div class="calculator-inputs">
+                    <label for="peso">Peso (kg):</label>
+                    <input type="number" id="peso" placeholder="Ex: 70">
+                    <label for="altura">Altura (m):</label>
+                    <input type="number" step="0.01" id="altura" placeholder="Ex: 1.75">
+                    <button onclick="calcularIMC()">Calcular IMC</button>
+                    <div id="resultado" class="result"></div>
+                </div>
+            </div>
+
+            <div class="calculator-card">
+                <h3>Frequência Cardíaca Máxima</h3>
+                <div class="calculator-inputs">
+                    <label for="idade">Idade:</label>
+                    <input type="number" id="idade" placeholder="Ex: 25">
+                    <button onclick="calcularFCM()">Calcular FCM</button>
+                    <div id="resultadoFCM" class="result"></div>
+                </div>
+            </div>
+
+            <div class="calculator-card">
+                <h3>Gasto Calórico</h3>
+                <div class="calculator-inputs">
+                    <label for="pesoCaloria">Peso (kg):</label>
+                    <input type="number" id="pesoCaloria" placeholder="Ex: 70">
+                    <label for="exercicio">Exercício:</label>
+                    <select id="exercicio">
+                        <option value="3.5">Caminhada leve</option>
+                        <option value="6">Caminhada rápida</option>
+                        <option value="8">Corrida leve</option>
+                        <option value="12">Corrida intensa</option>
+                        <option value="6">Musculação</option>
+                        <option value="8">Ciclismo</option>
+                    </select>
+                    <label for="tempo">Tempo (minutos):</label>
+                    <input type="number" id="tempo" placeholder="Ex: 30">
+                    <button onclick="calcularCalorias()">Calcular Calorias</button>
+                    <div id="resultadoCalorias" class="result"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="faq">
+        <h2>❓ Perguntas Frequentes</h2>
+        <div class="faq-container">
+            <div class="faq-item">
+                <button class="faq-question" onclick="toggleFAQ(this)">
+                    Quantas vezes por semana devo treinar?
+                </button>
+                <div class="faq-answer">
+                    <p>Para iniciantes: 3-4x por semana. Para intermediários: 4-5x por semana. Para avançados: 5-6x por semana. O importante é garantir pelo menos um dia de descanso entre treinos intensos do mesmo grupo muscular.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question" onclick="toggleFAQ(this)">
+                    Qual o melhor horário para treinar?
+                </button>
+                <div class="faq-answer">
+                    <p>O melhor horário é aquele que você consegue manter consistência. Pela manhã você tem mais energia, à tarde a temperatura corporal está mais alta, e à noite pode ajudar a relaxar. O importante é escolher um horário e manter regularidade.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question" onclick="toggleFAQ(this)">
+                    Devo treinar em jejum?
+                </button>
+                <div class="faq-answer">
+                    <p>Treinar em jejum pode ser eficaz para queima de gordura em exercícios de baixa intensidade, mas para treinos intensos é recomendado consumir algo leve 30-60 minutos antes (como uma banana ou torrada).</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question" onclick="toggleFAQ(this)">
+                    Quanto tempo para ver resultados?
+                </button>
+                <div class="faq-answer">
+                    <p>Primeiros resultados (sensação de bem-estar): 1-2 semanas. Mudanças físicas perceptíveis: 4-6 semanas. Transformações significativas: 3-6 meses. A consistência é mais importante que a intensidade.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question" onclick="toggleFAQ(this)">
+                    Preciso de suplementos?
+                </button>
+                <div class="faq-answer">
+                    <p>Suplementos são complementos, não substitutos de uma boa alimentação. Whey protein, creatina e multivitamínicos podem ser úteis, mas priorize sempre uma dieta balanceada rica em alimentos naturais.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato">
+        <h2>📞 Contato e Suporte</h2>
+        <div class="contact-info">
+            <div class="contact-card">
+                <h3>Entre em Contato</h3>
+                <p>📧 contato@fitproacademy.com</p>
+                <p>📱 (11) 99999-9999</p>
+                <p>📍 São Paulo, SP - Brasil</p>
+                <p>🕒 Segunda a Sexta: 6h às 22h</p>
+            </div>
+            <div class="contact-card">
+                <h3>Redes Sociais</h3>
+                <p>📘 Facebook: /FitProAcademy</p>
+                <p>📷 Instagram: @fitproacademy</p>
+                <p>🐦 Twitter: @fitproacademy</p>
+                <p>📺 YouTube: FitPro Academy</p>
+            </div>
+        </div>
     </section>
 
     <footer>
-        <p>Desenvolvido por Matheus - Trabalho Escolar</p>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>FitPro Academy</h3>
+                <p>Transformando vidas através do condicionamento físico científico desde 2025.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Links Úteis</h3>
+                <ul>
+                    <li><a href="#sobre">Sobre Nós</a></li>
+                    <li><a href="#exercicios">Exercícios</a></li>
+                    <li><a href="#nutricao">Nutrição</a></li>
+                    <li><a href="#planos">Planos de Treino</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Suporte</h3>
+                <ul>
+                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                    <li><a href="#calculadoras">Calculadoras</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 FitPro Academy. Todos os direitos reservados. Desenvolvido com dedicação para sua saúde.</p>
+        </div>
     </footer>
 
     <script src="script.js"></script>
 </body>
-</html>
+</html>   
